@@ -361,7 +361,7 @@ nav ul li a{
 	overflow: hidden;
 }
 #one{
-	background-image: url('images/img3.jpg');
+	background-image: url('images/img3.JPG');
 	width: 39vw;
 	left: 0;
 }
@@ -371,14 +371,14 @@ nav ul li a{
 	left: 60vw;
 }
 #three{
-	background-image: url('images/img1.jpg');
+	background-image: url('images/img1.JPG');
 	width: 29vw;
 	margin-top: 1vh; 
 	top:50%; 
 	left: 0;
 }
 #four{
-	background-image: url('images/img4.jpg');
+	background-image: url('images/img4.JPG');
 	width: 30vw;
 	margin-top: 1vh; 
 	top:50%; 
@@ -386,7 +386,7 @@ nav ul li a{
 }
 #five{
 	/*background-transform: rotate(-45deg);*/
-	background-image: url('images/img5.jpg');
+	background-image: url('images/img5.JPG');
 	position: absolute; 
 	/*top: 2vh; */
 	left: 40vw;	
@@ -394,7 +394,7 @@ nav ul li a{
 	width: 19vw; 
 }
 #six{
-	background-image: url('images/img4.jpg');
+	background-image: url('images/img4.JPG');
 	width: 39vw;
 	margin-top: 1vh; 
 	top:50%; 
