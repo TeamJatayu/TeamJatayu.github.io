@@ -45,6 +45,7 @@ section{
 	overflow: hidden;
 	background-repeat: no-repeat;
 	background-size: 100vw 100vh;
+	background-color: black;
 	top:100vh;
 }
 
@@ -154,13 +155,15 @@ h1{
 }
 
 .fab h3{
-	color: orange;
+	padding: 3%;
+	color: white;
 	height: 55%;
-	width: 55%;
-	font-size: 1.75rem;
+	width: 57%;
+	font-size: 1.5rem;
+	text-shadow: 2px 2px orange, -2px -2px orange, -2px 2px orange, 2px -2px orange;
 	position:absolute;
 	border-radius: 50%;
-	background-color: rgba(0,0,0,1);
+	background-color: rgba(150,150,150,1);
 	top:62%;
 	left:58%;
 	transform: translate3d(-50%,-50%,0);
@@ -189,6 +192,7 @@ h1{
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	text-shadow: 2px 2px rgba(255,255,255,1), -2px -2px rgba(255,255,255,1), -2px 2px rgba(255,255,255,1), 2px -2px rgba(255,255,255,1);
 	text-align: center;
 	font-family: EALogo;
 	transform: translate(-50%,-50%);
@@ -203,6 +207,16 @@ h1{
 	text-align: center;
 	vertical-align: center;
 }
+
+.teamEmail h3,.teamAddress h3,.contactInfo h3,.captainInfo h3{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: white;
+	transform: translate(-50%,-50%);
+}
+
+
 /*---Links---*/
 a:hover{
 	text-decoration: none;
@@ -261,10 +275,17 @@ nav ul li a{
 	position: absolute;
 	left: 50%;
 	top: 50%;
+	opacity: 1;
 	transform: translateX(-50%) translateY(-50%);
+	color: #fff;
+	transition: all 3s ease;
+	font-family: EALogo;
+	font-size: 4.5em;
+	letter-spacing: 0.2em;
 }
+.hidden{opacity: 0;font-size: 0;}
 
-.fly-in-text li{
+/*.fly-in-text li{
 	display: inline-block;
 	font-style: Open Sans;
 	font-size: 1.05em;
@@ -273,18 +294,16 @@ nav ul li a{
 	opacity: 1;
 	color: #fff;
 	font-family: EALogo;
-}
+}*/
 
 .roshead div .fly-in-text {
 	top: 90%;
 	left: 15%;
 }
 
-.fly-in-text.hidden li{
-	opacity: 0;
-}
 
-.fly-in-text.hidden li { opacity: 0;font-size: 0; }
+
+
 
 /*.fly-in-text.hidden li:nth-child(2) { transform: translateX(-115vw); }
 .fly-in-text.hidden li:nth-child(3) { transform: translateX(-120vw); }
@@ -361,32 +380,32 @@ nav ul li a{
 	overflow: hidden;
 }
 #one{
-	background-image: url('images/img3.JPG');
-	width: 39vw;
-	left: 0;
+	background-image: url('images/tabs/About Us.JPG');
+	width: 38vw;
+	left: 1vw;
 }
 #two{
-	background-image: url('images/img2.jpg');
-	width: 40vw;
+	background-image: url('images/tabs/Roster.JPG');
+	width: 39vw;
 	left: 60vw;
 }
 #three{
-	background-image: url('images/img1.JPG');
-	width: 29vw;
+	background-image: url('images/tabs/Sponsors.JPG');
+	width: 28vw;
 	margin-top: 1vh; 
 	top:50%; 
-	left: 0;
+	left: 1vw;
 }
 #four{
-	background-image: url('images/img4.JPG');
-	width: 30vw;
+	background-image: url('images/tabs/Competitions.jpg');
+	width: 29vw;
 	margin-top: 1vh; 
 	top:50%; 
 	left: 70%;
 }
 #five{
 	/*background-transform: rotate(-45deg);*/
-	background-image: url('images/img5.JPG');
+	background-image: url('images/tabs/Cars.jpg');
 	position: absolute; 
 	/*top: 2vh; */
 	left: 40vw;	
@@ -394,7 +413,7 @@ nav ul li a{
 	width: 19vw; 
 }
 #six{
-	background-image: url('images/img4.JPG');
+	background-image: url('images/tabs/Achievements.JPG');
 	width: 39vw;
 	margin-top: 1vh; 
 	top:50%; 
@@ -493,6 +512,15 @@ nav ul li a{
 	border-radius: 10%;
 	z-index: 2;
 }
+.sponsor:nth-child(1){top: 10%;background: url('images/member.jpg'); background-size: 100% 100%;}
+.sponsor:nth-child(2){top: 50%;background: url('images/member.jpg'); background-size: 100% 100%;}
+.sponsor:nth-child(3){top: 70%;left:60%;background: url('images/member.jpg'); background-size: 100% 100%;}
+.sponsor:nth-child(4){top: 20%;left:30%;background: url('images/member.jpg'); background-size: 100% 100%;}
+.sponsor:nth-child(5){top: 10%;left:70%;background: url('images/member.jpg'); background-size: 100% 100%;}
+.sponsor:nth-child(6){top: 40%;left:50%;background: url('images/member.jpg'); background-size: 100% 100%;}
+.sponsor:nth-child(7){top: 35%;left:80%;background: url('images/member.jpg'); background-size: 100% 100%;}
+.sponsor:nth-child(8){top: 60%;left:30%;background: url('images/member.jpg');  background-size: 100% 100%;}
+.sponsor:nth-child(9){}
 
 .teamHead{
 	width: 25vh;
@@ -504,6 +532,7 @@ nav ul li a{
 	z-index: 1;
 	top: 20%;
 	left:10%;
+	background-repeat: no-repeat;
 	overflow: hidden;
 	transition: all 1s ease;
 }
@@ -546,12 +575,25 @@ nav ul li a{
 	top: 70%;
 }
 
+.sponsorDesc{
+	width: inherit;
+	height: inherit;
+	background-color: rgba(20,20,20,0);
+	position: relative;
+	opacity: 0;
+}
+.sponsorDesc:hover{
+	background-color: rgba(20,20,20,0.4);
+	opacity: 1;
+}
+
+
 .compBG{
 	position: absolute;
 	top: 7.5%;
-	left: 5%;
+	/*left: 5%;*/
 	height:85%;
-	width:90%;
+	width:100%;
 	z-index: 1;
 	background-color: rgba(255,255,255,0.6);
 	overflow: hidden;
@@ -589,30 +631,37 @@ nav ul li a{
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: rgba(255,255,0,0.5);
+	background-image: linear-gradient(rgba(0,0,0,1),rgba(253,174,47,0.7));
+	/*background-image: linear-gradient(rgba(255,255,255,0.7),rgba(150,150,150,0.7));*/
+	/*background-color: rgba(0,0,0,0.7);*/
 	transition: all 1s ease;
 	z-index: 1;
 	/*padding: 2%;*/
 }
-.compHead:hover{
-	background-color: rgba(255,255,0,0.8);
+
+.compLogo{
+	left:30%;
+	top:-10px;
+	background-size: 100%;
+	z-index: 0;
 }
 
+
 .compContent{
-	width:60%;
+	width: 100%;
 	height: 80%;
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	background-color: rgba(2455,0,0,0.5);
+	background-image: linear-gradient(rgba(253,174,47,0.7),rgba(253,174,47,0.7),rgba(0,0,0,1));
+	/*background-color: rgba(0,0,0,0.7);*/
+	/*background-image: linear-gradient(rgba(150,150,150,0.7),rgba(0,0,0,0.7));*/
 	z-index: 1;
 	background-filter: blur(5px);
 	transition: all 1s ease;
 	overflow: auto;
 }
-.compContent:hover{
-	background-color: rgba(255,0,0,0.8);
-}
+
 
 .feedback{
 	height: 80%;
@@ -625,7 +674,7 @@ nav ul li a{
 }
 
 .fcontact{
-	height: 40%;
+	height: 56.25%;
 	width: 45%;
 	position: absolute;
 	top: 10%;
@@ -636,23 +685,43 @@ nav ul li a{
 }
 
 .teamEmail{
-	height: 25%;
+	position: absolute;
+	top: 0;
+	height: 20%;
+	width: 100%;
 	border-bottom: 1px solid rgba(0,0,0,1);
 	overflow: hidden;
 }
 
 .teamAddress{
-	height: 25%;
+	position: absolute;
+	top: 20%;
+	height: 40%;
+	width: 100%;
 	border-bottom: 1px solid rgba(0,0,0,1);
 	overflow: hidden;
 }
 
 .contactInfo{
-	height: 25%;
+	position: absolute;
+	top: 60%;
+	height: 40%;
+	width: 100%;
 	overflow: hidden;
 }
 
+/*.captainInfo{
+	position: absolute;
+	top: 70.82%;
+	height: 29.16%;
+	width: 100%;
+	overflow: hidden;
+}*/
+
 .fcontactInner{
+	position: absolute;
+	top: -0;
+	left: 0;
 	height: 100%;
 	width: 100%;
 	background-color: rgba(33,33,33,1);
