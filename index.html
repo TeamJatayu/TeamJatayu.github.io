@@ -3,6 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device_width, initial-scale=1">
 	<meta name="author" content="Diplav">
+	<meta name="keywords" value="">
 	
 	<title>Team Jatayu</title>
 	<link rel="icon" type="image/jpg" href="images/logos/team logo.jpg">
@@ -15,9 +16,9 @@
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
 
-<script src="scroll\jquery.fullpage.js"></script>
+<!-- <script src="scroll\jquery.fullpage.js"></script> -->
 
-<script src="main.js"></script>
+<script src="main.js"></script> 
 <!-- <script>
 	($function(){
 		$(#footer).load("footer.html");
@@ -32,7 +33,7 @@
 </head>
 
 
-<body class="scroll">
+<body >
 
 
 <nav class="initial">
@@ -40,36 +41,20 @@
 		<li><a href="index.html"><div style="height:100%;width:100%;"></div></a></li>
 		<li><a href='#'>About Us</a></li>
 		<li><a href='#'>Gallery</a></li>
-		<li><a href='roster.html'>The Team</a></li>
+		<li><a href='#'>The Team</a></li>
 		<li><a href='competitions.html'>Competitions</a></li>
-		<li><a href='#'>Contact Us</a></li>
+		<li><a  id="contact">Contact Us</a></li>
 	</ul>
 </nav>
 
 
 <a href="#"><div id="fab" class="fab"><h3 align="center" >Join Us</h3></div></a>
 
-<div id="fullpage">
+
 
 <section class="moto">
 	<div>
-		<h1 align="center " class="fly-in-text hidden">TEAM JATAYU
-			<!-- <ul class="fly-in-text hidden">
-				<li>T</li>
-				<li>E</li>
-				<li>A</li>
-				<li>M</li>
-
-				<li> </li>
-
-				<li>J</li>
-				<li>A</li>
-				<li>T</li>
-				<li>A</li>
-				<li>Y</li>
-				<li>U</li>
-			</ul> -->
-		</h1>
+		<h1 align="center " class="fly-in-text hidden">TEAM JATAYU</h1>
 	</div>
 </section>
 
@@ -79,15 +64,16 @@
 	<div class=" slantedR"><h1>Video Gallery</h1></div>
 	<div id="sliderBox" >
 		<img src="images/gs/GS1.JPG">
-		<img src="images/gs/GS2.JPG">
+		<img src="images/gs/GS2.jpg">
 		<img src="images/gs/GS3.JPG">
-		<img src="images/gs/GS4.jpg">
+		<img src="images/gs/GS4.JPG">
 		<img src="images/gs/GS5.JPG">
 	</div>
 </section>
 
 
-	<section class="grid"><a href="roster.html">
+<section class="grid">
+	<a href="#">
 	<div class="gridItem" id="one" onmouseover="getElem('#one')" >
 		<div class="gridItemInner" id="onei">
 			<h1 >About Us</h1>
@@ -110,7 +96,7 @@
 	</div>
 	</a>
 
-	<a href="#">
+	<a href="ourSponsors.html">
 	<div class="gridItem" id="three" onmouseover="getElem('#three')" >
 		<div class="gridItemInner" id="threei">
 			<h1>Sponsors</h1>
@@ -138,7 +124,7 @@
 </section>
 
 
-<section class="footer" >
+<section class="footer">
 
 
 	<div class="feedback">
@@ -205,9 +191,9 @@
 </section>
 
 
-</div>
+
 
 </body>
 
-<script type="text/javascript">$('#fullpage').fullpage();</script>
+<!-- <script type="text/javascript">$('#fullpage').fullpage();</script> -->
 </html>

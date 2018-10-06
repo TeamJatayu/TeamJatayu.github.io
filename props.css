@@ -12,14 +12,10 @@
 }
 
 body{
-	letter-spacing:  0;
-	margin:0;
-	padding:0;
+	overflow-x: hidden;
+	scroll-snap-type: y mandatory;
 }
 
-body.scroll{
-	overflow: hidden;
-}
 
 
 
@@ -27,14 +23,16 @@ body.scroll{
 /* --Section- */
 
 section{
-	display:block;
+	display: block;
 	margin: 0;
 	height: 100vh;
 	width:100vw;
+	overflow: hidden;
+	scroll-snap-align: start;
+	-webkit-scroll-snap-align: start;
 }
 
 .moto{
-	position: fixed;
 	z-index: 1;
 	background-color : rgba(0,0,0,1); 
 }
@@ -51,15 +49,15 @@ section{
 
 .grid{
 	z-index: 1;
-	position: relative;
+	position: absolute;
 	background-color: rgba(0,0,0,1);
 	top:200vh;	
 }
 
 .footer{
+	z-index: 1;
 	position:absolute; 
 	top: 300vh; 
-	height: 100vh;
 	background-color: rgba(16,16,16,1);
 }
 
@@ -72,7 +70,7 @@ section{
 }
 
 .roster{
-	z-index: 2;
+	z-index: 1;
 	position: absolute;
 	top: 40vh; 
 	background-size: 100% 100%;
@@ -81,6 +79,7 @@ section{
 .sponsors{
 	background: linear-gradient(rgba(0,0,0,1), orange);
 	top: 100vh; 
+
 }
 
 
@@ -123,7 +122,7 @@ input[type=text], select, textarea {
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical;
+    resize: none;
 }
 
 input[type=submit] {
@@ -156,22 +155,25 @@ h1{
 
 .fab h3{
 	padding: 3%;
-	color: white;
+	color: orange;
 	height: 55%;
 	width: 57%;
 	font-size: 1.5rem;
-	text-shadow: 2px 2px orange, -2px -2px orange, -2px 2px orange, 2px -2px orange;
+	text-shadow: 2px 2px black, -2px -2px black, -2px 2px black, 2px -2px black;
 	position:absolute;
 	border-radius: 50%;
-	background-color: rgba(150,150,150,1);
-	top:62%;
-	left:58%;
+	/*background-color: rgba(150,150,150,1);*/
+	top:50%;
+	left:50%;
 	transform: translate3d(-50%,-50%,0);
-	transition: all 1s ease;
+	transition: all 1s ;
 }
-/*.fab:hover h3{
-	transform: translate3d(-50%,-50%,0) rotate(-30deg);
-}*/
+.fab:hover h3{
+	transform: translate3d(-50%,-50%,0) rotate(-60deg);
+	/*text-shadow: 1px 1px white, -1px -1px white, -1px 1px white, 1px -1px white;*/
+	color: white;
+
+}
 
 .gridItem .gridItemInner h1{
 	color: rgba(255,255,255,1);
@@ -216,10 +218,16 @@ h1{
 	transform: translate(-50%,-50%);
 }
 
+.sponsorDesc h2{
+	text-shadow: 2px 2px rgba(0,0,0,1), -2px -2px rgba(0,0,0,1), -2px 2px rgba(0,0,0,1), 2px -2px rgba(0,0,0,1);
+	font-family: EALogo;
+}
+
 
 /*---Links---*/
 a:hover{
 	text-decoration: none;
+	color: rgba(253,174,47,1);
 }
 /*a:visited{
 	text-decoration: none;
@@ -277,6 +285,7 @@ nav ul li a{
 	top: 50%;
 	opacity: 1;
 	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
 	color: #fff;
 	transition: all 3s ease;
 	font-family: EALogo;
@@ -331,7 +340,9 @@ nav ul li a{
 
 
 #fullpage{
-	overflow: hidden;
+	overflow: auto;
+	-webkit-scroll-snap-type: y mandatory;
+	scroll-snap-type: y mandatory;
 }
 
 #sliderBox{
@@ -377,38 +388,39 @@ nav ul li a{
 	background-repeat: no-repeat;
 	border-top-right-radius: 15%;
 	border-bottom-left-radius: 15%;
+	/*filter: blur(3px); */
 	overflow: hidden;
 }
 #one{
 	background-image: url('images/tabs/About Us.JPG');
 	width: 38vw;
-	left: 1vw;
+	left: 0.5vw;
 }
 #two{
 	background-image: url('images/tabs/Roster.JPG');
 	width: 39vw;
-	left: 60vw;
+	left: 59.5vw;
 }
 #three{
 	background-image: url('images/tabs/Sponsors.JPG');
 	width: 28vw;
 	margin-top: 1vh; 
 	top:50%; 
-	left: 1vw;
+	left: 0.5vw;
 }
 #four{
 	background-image: url('images/tabs/Competitions.jpg');
 	width: 29vw;
 	margin-top: 1vh; 
 	top:50%; 
-	left: 70%;
+	left: 69.5vw;
 }
 #five{
 	/*background-transform: rotate(-45deg);*/
 	background-image: url('images/tabs/Cars.jpg');
 	position: absolute; 
 	/*top: 2vh; */
-	left: 40vw;	
+	left: 39.5vw;	
 	height: 48vh; 
 	width: 19vw; 
 }
@@ -417,7 +429,7 @@ nav ul li a{
 	width: 39vw;
 	margin-top: 1vh; 
 	top:50%; 
-	left: 30vw;
+	left: 29.5vw;
 }
 
 .gridItemInner{
@@ -465,22 +477,22 @@ nav ul li a{
 	position: fixed;
 	bottom: 2vh;
 	left: 1vw;
-	width: 19vh;
-	height: 19vh;
-	background: url("images/gear.gif");
+	width: 15vh;
+	height: 15vh;
+	background: url("images/gear2.png");
 	background-size: 100% 100%;
 	/*border-radius: 50%;*/
 	z-index: 2;
-	transition: all 1s ease;
+	transition: all 1s ;
 }
 .fabhide{
 	transform: translateY(200%);
 }
-/*.fab:hover{
-	transform: rotate(30deg);
-}*/
+.fab:hover{
+	transform: rotate(60deg);
+}
 
-.mid{
+/*.mid{
 	padding:1%;
 	position: relative ;
 	top: -20%;
@@ -492,7 +504,7 @@ nav ul li a{
 	background-color : rgba(200,200,200,1);
 	box-shadow: 1vh 1vh rgba(0,0,0,0.6);
 	z-index: 2;
-}
+}*/
 
 .innerRoster{
 	overflow:hidden;
@@ -502,25 +514,35 @@ nav ul li a{
 	background-color: rgba(0,0,0,0.5);
 }
 
-/*.sponsor{
-	background-repeat: no-repeat; 
-	 background-size: 100% 100%;
-}*/
+.sponsor{
+	background-repeat: no-repeat;
+	background-color: white;
+	transition: all linear 1s;
+}
 .sponsor:hover{
 	width: 40vh;
 	height: 40vh;
+	transform: translate(-7.5vh,-7.5vh);
 	border-radius: 10%;
 	z-index: 2;
 }
-.sponsor:nth-child(1){top: 10%;background: url('images/member.jpg'); background-size: 100% 100%;}
-.sponsor:nth-child(2){top: 50%;background: url('images/member.jpg'); background-size: 100% 100%;}
-.sponsor:nth-child(3){top: 70%;left:60%;background: url('images/member.jpg'); background-size: 100% 100%;}
-.sponsor:nth-child(4){top: 20%;left:30%;background: url('images/member.jpg'); background-size: 100% 100%;}
-.sponsor:nth-child(5){top: 10%;left:70%;background: url('images/member.jpg'); background-size: 100% 100%;}
-.sponsor:nth-child(6){top: 40%;left:50%;background: url('images/member.jpg'); background-size: 100% 100%;}
-.sponsor:nth-child(7){top: 35%;left:80%;background: url('images/member.jpg'); background-size: 100% 100%;}
-.sponsor:nth-child(8){top: 60%;left:30%;background: url('images/member.jpg');  background-size: 100% 100%;}
-.sponsor:nth-child(9){}
+.sponsor:nth-child(1){top: 20%;background: url('images/sponsors/Adams.png'); background-size: 100% 100%;}
+.sponsor:nth-child(2){top: 55%;background: url('images/sponsors/Altair HyperWorks.png');background-color: white; background-size: 100% 100%;}
+.sponsor:nth-child(3){top: 20%;left:30%;background: url('images/sponsors/ANSYS.jpg'); background-size: 100% auto;}
+.sponsor:nth-child(4){top: 55%;left:30%;background: url('images/sponsors/Bharat Petroleum.jpg'); background-size: 100% 100%;}
+.sponsor:nth-child(5){top: 20%;left:50%;background: url('images/sponsors/Clapragz.jpg'); background-size: 100% 100%;}
+.sponsor:nth-child(6){top: 55%;left:50%;background: url('images/sponsors/Darcl Logistics.jpg');  background-repeat: no-repeat;background-position: 50% 50%;background-color: white;background-size: 100% auto;}
+.sponsor:nth-child(7){top: 20%;left:70%;background: url('images/sponsors/Detailing Devils.jpg'); background-size: 100% 100%;}
+.sponsor:nth-child(8){top: 55%;left:70%;background: url('images/sponsors/FOX.jpg');  background-size: 100% 100%;}
+#snine{background: url('images/sponsors/HEL.jpg');  background-size: 100% 100%;}
+#sten{background: url('images/sponsors/Lesoft.png');  background-repeat: no-repeat;background-position: 50% 50%;background-color: white;background-size: 100% auto;}
+#seleven{background: url('images/sponsors/MARC.jpg');  background-size: 100% 100%;}
+#stwelve{background: url('images/sponsors/Messe Dusseldorf.jpg');  background-size: 100% 100%;}
+#sthirteen{background: url('images/sponsors/Red Bull.jpg');  background-size: 100% 100%;}
+#sfourteen{background: url('images/sponsors/SolidWorks.jpg');  background-repeat: no-repeat;background-position: 50% 50%;background-color: white;background-size: 100% auto;}
+#sfifteen{background: url('images/sponsors/Wilwood3.jpg');  background-repeat: no-repeat;background-position: 50% 50%;background-color: white;background-size: 100% auto;}
+#ssixteen{background: url('images/sponsors/Unocal.jpg');  background-repeat: no-repeat;background-position: 50% 50%;background-color: white;background-size: 100% auto;}
+
 
 .teamHead{
 	width: 25vh;
@@ -576,11 +598,16 @@ nav ul li a{
 }
 
 .sponsorDesc{
-	width: inherit;
+	/*width: inherit;*/
 	height: inherit;
+	display: flex;
 	background-color: rgba(20,20,20,0);
-	position: relative;
+	/*position: relative;*/
 	opacity: 0;
+	color: orange;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
 }
 .sponsorDesc:hover{
 	background-color: rgba(20,20,20,0.4);
@@ -640,9 +667,13 @@ nav ul li a{
 }
 
 .compLogo{
-	left:30%;
-	top:-10px;
+	width: 60vh;
+	height: 60vh;
+	left: 35%;
+	top: 120px;
 	background-size: 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
 	z-index: 0;
 }
 
@@ -763,7 +794,12 @@ nav ul li a{
 	left: 50%;
 }
 
-
+.compContent p{
+	margin: 4%;
+	font-size: 1.3em;
+	text-align: center;
+}
+ 
 
 
 
