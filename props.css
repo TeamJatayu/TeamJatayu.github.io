@@ -11,6 +11,8 @@
 	font-family: sans-serif;
 }
 
+
+
 body{
 	overflow-x: hidden;
 	scroll-snap-type: y mandatory;
