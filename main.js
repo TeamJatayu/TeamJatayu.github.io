@@ -13,7 +13,7 @@ $(function(){
 		var elem = $(document);
 		var lastScroll = 0;
 
-		elem.on(('mousemove'),function(){
+		elem.on(('scroll'),function(){
 			var currScroll = $(this).scrollTop();
 
 			if(currScroll>lastScroll) {
@@ -31,33 +31,42 @@ $(function(){
 
 	});
 
-//to display team members
-
-$(window).scroll(function() {
-	page();
-	fastScroll();
+$(document).ready(function() {
+	$('#contact').click(function(){
+		// window.location.href = "index.html";
+		var aTag = $(".footer");
+    	$('html,body').animate({scrollTop: aTag.offset().top},'slow');
+	});
 });
 
-function fastScroll(){
-	var hT = $('.roster').offset().top,
-       hH = $('.roster').outerHeight(),
+$(window).scroll(function(){
+	page();
+});
+
+
+
+//to display team members
+
+function fastScroll(eid){
+	var hT = $(eid).offset().top,
+       hH = $(eid).outerHeight(),
        wH = $(window).height(),
        wS = $(this).scrollTop();
    	if (wS > (hT+hH-wH)){
-       $('.teamMember').removeClass('init');
+       $(' .teamMember').removeClass('init');
    	}
 }
 
 function page(){
 	var scroll = $(window).scrollTop();
-	// $('.moto').css('position',' absolute');
-	// $('.moto').css('top',+(scroll*0.5)+'px');
+	$('.moto').css('position',' absolute');
+	$('.moto').css('top',+(scroll*0.5)+'px');
 
 	$('.roshead').css('position',' absolute');
 	$('.roshead').css('top',+(scroll*0.5)+'px');
 
-	$('.mid').css('position',' absolute');
-	$('.mid').css('top',-(scroll*2)+'px');
+	// $('.mid').css('position',' absolute');
+	// $('.mid').css('top',-(scroll*2)+'px');
 }
 
 
@@ -66,8 +75,8 @@ var elem;
 function getElem(ele){
 	elem=ele;
 
-
 	$(document).ready(function() {
+
 		$(elem).mousemove(function(e){
 			var movX = 50+(e.pageX * (-1 / 100));
 			var movY = 50+(e.pageY * (-1 / 56));
