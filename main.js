@@ -4,7 +4,7 @@
 
 // 	});
 
-$(document).ready(function() {
+$(window).ready(function() {
 
 	//to display team name
 		setTimeout(function(){
