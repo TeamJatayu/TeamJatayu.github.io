@@ -23,7 +23,7 @@ $(document).on(('scroll'),function(){
 	});
 
 
-$(window).ready(function() {
+window.onload = function() {
 
 	//to display team name
 		setTimeout(function(){
@@ -35,12 +35,10 @@ $(window).ready(function() {
 			$('nav').removeClass('initial');
 		},200)
 
-		
-
 
 	$('body').css("display","block");
 
-});
+}
 
 $(window).scroll(function(){
 	page();
