@@ -1,5 +1,128 @@
 @import url(https://fonts.googleapis.com/css?family=Arvo:700);
 @import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+@font-face{
+  font-family: EALogo;
+  src: url("EASPORTS15.ttf");
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.moto{
+  z-index: 0;
+  background-color : rgba(0,0,0,1); 
+    display: block;
+  margin: 0;
+  height: 100vh;
+  width:100vw;
+  overflow: hidden;
+  scroll-snap-align: start;
+  -webkit-scroll-snap-align: start;
+}
+
+.fly-in-text{
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 1;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+  transition: all 3s ease;
+  font-family: EALogo;
+  font-size: 4.5em;
+  letter-spacing: 0.2em;
+}
+.hidden{opacity: 0;font-size: 0;}
+
+.teamName{
+  position: absolute;
+  top: 60%;
+  right: 10%;
+  z-index: 1;
+}
+.teamName h2{
+  color: rgba(255,255,255,1);
+}
+
+nav{
+  position: fixed;
+  max-height: 12vh;
+  text-align: center;
+  /*left: 11vw;*/
+  top: 0;
+  left: -2vw;
+  padding: 10px 0px;
+  transition: all 1s ease;
+  -webkit-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  overflow: visible;
+  z-index: 2;
+}
+
+nav.hidden{
+  transform: translate3d(0,-100%,0);
+}
+
+nav.initial{
+  transform: translateX(200%);
+}
+
+nav ul li{
+  display: inline-block;
+  background-color: rgba(51,51,51,0.6);
+  float: left;
+  padding: 20px 20px;
+  font-size: 2.5vh;
+  font-family: sans-serif;
+}
+nav ul li:first-child{
+  width: 23vh;
+  height: 23vh;
+  overflow: visible;
+  background-image: url("images/logos/team logo.jpg");
+  background-size: 80% 80%;
+  background-repeat: no-repeat;
+  background-color: rgba(51,51,51,0.7);
+  background-position: 50% 90%;
+  transform: translateY(-30%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+nav ul li:last-child{
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+}
+nav ul li:nth-child(2){
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+}
+nav ul li:hover{
+  background-color: rgba(51,51,51,0.9); 
+}
+
+
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+}
 
 .shadow {
   color: #fff;
@@ -31,10 +154,16 @@
 
 
 body{
-  background: #333333
+  overflow-x: hidden;
+  background: #222222;
 }
 #gallery {
   padding-top: 40px;
+  position: absolute;
+  top: 100vh;
+  background: #222222;
+  width: 100vw;
+
 }
 
 .img-wrapper {
@@ -162,6 +291,7 @@ body:after {
   width: 1px;
   height: 90%;
   background: #464c63;
+  z-index: 1;
 }
 .timeline .bar {
   position: absolute;
@@ -175,7 +305,7 @@ body:after {
 
 section {
   
-  padding: 20px;
+  /*padding: 20px;*/
   font-size: 16px;
   font-weight: 200;
   font-family: "Montserrat";
