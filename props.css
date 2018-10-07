@@ -13,6 +13,7 @@
 
 
 
+
 body{
 	overflow-x: hidden;
 	scroll-snap-type: y mandatory;
@@ -36,6 +37,7 @@ body{
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
+
 
 
 
@@ -75,9 +77,9 @@ section{
 }
 
 .footer{
-	z-index: 1;
-	position:absolute; 
-	top: 300vh; 
+	z-index: -1;
+	position: fixed; 
+	top: 0vh; 
 	background-color: rgba(16,16,16,1);
 }
 
