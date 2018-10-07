@@ -34,7 +34,7 @@ $(function(){
 $(document).ready(function() {
 	$('#contact').click(function(){
 		// window.location.href = "index.html";
-		var aTag = $(".footer");
+		var aTag = $(".empty");
     	$('html,body').animate({scrollTop: aTag.offset().top},'slow');
 	});
 });
