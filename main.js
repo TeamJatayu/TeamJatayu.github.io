@@ -1,26 +1,7 @@
-// $(function(){
-		
 
-
-// 	});
-
-$(window).ready(function() {
-
-	//to display team name
-		setTimeout(function(){
-			$('.fly-in-text').removeClass('hidden');
-		},200)
-
-		//to display nav bar
-		setTimeout(function(){
-			$('nav').removeClass('initial');
-		},200)
-
-		//to hide and display navbar and FAB on scroll
-		var elem = $(document);
+//to hide and display navbar and FAB on scroll
 		var lastScroll = 0;
-
-		elem.on(('scroll'),function(){
+$(document).on(('scroll'),function(){
 			var currScroll = $(this).scrollTop();
 
 			if(currScroll>lastScroll) {
@@ -35,13 +16,30 @@ $(window).ready(function() {
 			lastScroll = currScroll;
 			});
 
-
-	$('body').css("display","block");
 	$('#contact').click(function(){
 		// window.location.href = "index.html";
 		var aTag = $(".empty");
     	$('html,body').animate({scrollTop: aTag.offset().top},'slow');
 	});
+
+
+$(window).ready(function() {
+
+	//to display team name
+		setTimeout(function(){
+			$('.fly-in-text').removeClass('hidden');
+		},200)
+
+		//to display nav bar
+		setTimeout(function(){
+			$('nav').removeClass('initial');
+		},200)
+
+		
+
+
+	$('body').css("display","block");
+
 });
 
 $(window).scroll(function(){
