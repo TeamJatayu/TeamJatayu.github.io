@@ -154,6 +154,7 @@ nav ul li a{
 
 
 body{
+  display: none;
   overflow-x: hidden;
   background: #222222;
 }

@@ -1,8 +1,15 @@
-$(function(){
-		//to display team name
+// $(function(){
+		
+
+
+// 	});
+
+$(document).ready(function() {
+
+	//to display team name
 		setTimeout(function(){
 			$('.fly-in-text').removeClass('hidden');
-		},0)
+		},200)
 
 		//to display nav bar
 		setTimeout(function(){
@@ -29,9 +36,7 @@ $(function(){
 			});
 
 
-	});
-
-$(document).ready(function() {
+	$('body').css("display","block");
 	$('#contact').click(function(){
 		// window.location.href = "index.html";
 		var aTag = $(".empty");
