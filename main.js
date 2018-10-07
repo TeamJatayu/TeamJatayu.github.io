@@ -1,5 +1,22 @@
 
-//to hide and display navbar and FAB on scroll
+
+$(window).ready(function(){
+
+	//to display team name
+		setTimeout(function(){
+			$('.fly-in-text').removeClass('hidden');
+		},200)
+
+		//to display nav bar
+		setTimeout(function(){
+			$('nav').removeClass('initial');
+		},200)
+
+
+	$('body').css("display","block");
+
+
+	//to hide and display navbar and FAB on scroll
 		var lastScroll = 0;
 $(document).on(('scroll'),function(){
 			var currScroll = $(this).scrollTop();
@@ -21,24 +38,16 @@ $(document).on(('scroll'),function(){
 		var aTag = $(".empty");
     	$('html,body').animate({scrollTop: aTag.offset().top},'slow');
 	});
+});
+
+
 
 
 window.onload = function() {
 
-	//to display team name
-		setTimeout(function(){
-			$('.fly-in-text').removeClass('hidden');
-		},200)
+	
 
-		//to display nav bar
-		setTimeout(function(){
-			$('nav').removeClass('initial');
-		},200)
-
-
-	$('body').css("display","block");
-
-}
+} 
 
 $(window).scroll(function(){
 	page();
