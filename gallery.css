@@ -5,6 +5,10 @@
   src: url("EASPORTS15.ttf");
 }
 
+.deactivated{
+  color:grey;
+}
+
 ::-webkit-scrollbar {
     width: 4px;
 }

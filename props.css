@@ -12,7 +12,9 @@
 }
 
 
-
+.deactivated{
+	color:grey;
+}
 
 body{
 	overflow-x: hidden;
@@ -728,7 +730,7 @@ nav ul li a{
 }
 
 .fcontact{
-	height: 56.25%;
+	height: 80%;
 	width: 45%;
 	position: absolute;
 	top: 10%;
@@ -750,7 +752,7 @@ nav ul li a{
 .teamAddress{
 	position: absolute;
 	top: 20%;
-	height: 40%;
+	height: 35%;
 	width: 100%;
 	border-bottom: 1px solid rgba(0,0,0,1);
 	overflow: hidden;
@@ -758,19 +760,19 @@ nav ul li a{
 
 .contactInfo{
 	position: absolute;
-	top: 60%;
-	height: 40%;
+	top: 55%;
+	height: 35%;
 	width: 100%;
 	overflow: hidden;
 }
 
-/*.captainInfo{
+.captainInfo{
 	position: absolute;
-	top: 70.82%;
-	height: 29.16%;
+	top: 90%;
+	height: 10%;
 	width: 100%;
 	overflow: hidden;
-}*/
+}
 
 .fcontactInner{
 	position: absolute;

@@ -38,6 +38,8 @@ $(document).on(('scroll'),function(){
 		var aTag = $(".empty");
     	$('html,body').animate({scrollTop: aTag.offset().top},'slow');
 	});
+
+
 });
 
 
