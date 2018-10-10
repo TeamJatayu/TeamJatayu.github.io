@@ -97,7 +97,7 @@ section{
 .roster{
 	z-index: 1;
 	position: absolute;
-	top: 40vh; 
+	top: 100vh; 
 	background-size: 100% 100%;
 }
 
@@ -236,6 +236,7 @@ h1{
 }
 
 .teamEmail h3,.teamAddress h3,.contactInfo h3,.captainInfo h3{
+	text-align: center;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -577,11 +578,24 @@ nav ul li a{
 	border-radius: 50%;
 	position: absolute;
 	z-index: 1;
+	color: white;
 	top: 20%;
 	left:10%;
 	background-repeat: no-repeat;
 	overflow: hidden;
 	transition: all 1s ease;
+}
+.firstHead{
+	left: 10%
+}
+.secondHead{
+	left: 25%	
+}
+.thirdHead{
+	left: 40%
+}
+.fourthHead{
+	left: 55%
 }
 
 
@@ -592,22 +606,35 @@ nav ul li a{
 	background-color: rgba(40,40,40,1);
 	border-radius: 50%;
 	position: absolute;
+	background-size: 100% 100%;
 	top: 60%;
 	left:10%;
+	color: white;
 	overflow: hidden;
 	transition: all 2s ease;
+	background-repeat: no-repeat; 
+
 }
 .firstMember{
 	 left:10%; 
-	 background-repeat: no-repeat; 
 }
 .secondMember{
-	 left:40%; 
-	 background-repeat: no-repeat; 
+	 left:22%; 
 }
 .thirdMember{
-	 left:70%; 
-	 background-repeat: no-repeat; 
+	 left:34%; 
+}
+.fourthMember{
+	left:46%;
+}
+.fifthMember{
+	left:58%;
+}
+.sixthMember{
+	left:70%;
+}
+.seventhMember{
+	left:82%;
 }
 .init{
 	left: 10%;
@@ -616,10 +643,10 @@ nav ul li a{
 
 .memberDesc{
 	width: inherit;
-	height: 35%;
+	height: 40%;
 	background-color: rgba(20,20,20,0.4);
 	position: relative;
-	top: 70%;
+	top: 65%;
 }
 
 .sponsorDesc{
@@ -742,8 +769,8 @@ nav ul li a{
 
 .teamEmail{
 	position: absolute;
-	top: 10%;
-	height: 20%;
+	top: 0%;
+	height: 25%;
 	width: 100%;
 	border-bottom: 1px solid rgba(0,0,0,1);
 	overflow: hidden;
@@ -751,8 +778,8 @@ nav ul li a{
 
 .teamAddress{
 	position: absolute;
-	top: 30%;
-	height: 35%;
+	top: 25%;
+	height: 25%;
 	width: 100%;
 	border-bottom: 1px solid rgba(0,0,0,1);
 	overflow: hidden;
@@ -760,16 +787,16 @@ nav ul li a{
 
 .contactInfo{
 	position: absolute;
-	top: 65%;
-	height: 35%;
+	top: 50%;
+	height: 25%;
 	width: 100%;
 	overflow: hidden;
 }
 
 .captainInfo{
 	position: absolute;
-	top: 0%;
-	height: 10%;
+	top: 75%;
+	height: 25%;
 	width: 100%;
 	overflow: hidden;
 }

@@ -18,7 +18,20 @@ $(window).ready(function(){
 
 	//to hide and display navbar and FAB on scroll
 		var lastScroll = 0;
-$(document).on(('scroll'),function(){
+	$(document).on(('scroll'),function(){
+			//to display team members
+// function fastScroll(eid){
+	if($('body').is('.chk')){
+	var hT = $("#design").offset().top,
+       hH = $("#design").outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   	if (wS > (hT+hH-wH)){
+       $('#design .init').removeClass('init');
+   	}
+   }
+// }
+
 			var currScroll = $(this).scrollTop();
 
 			if(currScroll>lastScroll) {
@@ -40,6 +53,7 @@ $(document).on(('scroll'),function(){
 	});
 
 
+
 });
 
 
@@ -57,17 +71,7 @@ $(window).scroll(function(){
 
 
 
-//to display team members
 
-function fastScroll(eid){
-	var hT = $(eid).offset().top,
-       hH = $(eid).outerHeight(),
-       wH = $(window).height(),
-       wS = $(this).scrollTop();
-   	if (wS > (hT+hH-wH)){
-       $(' .teamMember').removeClass('init');
-   	}
-}
 
 function page(){
 	var scroll = $(window).scrollTop();

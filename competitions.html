@@ -24,9 +24,12 @@
 		$(#footer).load("footer.html");
 	});
 </script> -->
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="footer.css">
 <link rel="stylesheet" type="text/css" href="props.css">
-
 </head>
 
 
@@ -37,9 +40,9 @@
 		<li><a href="index.html"><div style="height:100%;width:100%;"></div></a></li>
 		<li><a href='#' class="deactivated">About Us</a></li>
 		<li><a href='gallery.html'>Gallery</a></li>
-		<li><a href="#" class="deactivated">The Team</a></li>
+		<li><a href="roster.html">The Team</a></li>
 		<li><a href='#'>Competitions</a></li>
-		<li><a href='index.html' id="contact">Contact Us</a></li>
+		<li><a href='#' id="contact">Contact Us</a></li>
 		<li><a href='kalam/index.html' target="_blank"><b>TEAM KALAM</b></a></li>
 	</ul>
 </nav>
@@ -110,6 +113,80 @@
 		<a href="https://endurostudent.in/" target="_blank"><div class="compBtn"><p> KNOW MORE</p></div></a>
 	</div>
 	
+</section>
+
+<section class="empty" style="z-index: -1;position: absolute;top: 400vh;background-color: rgba(0,0,0,0);">
+	
+</section>
+
+
+<section class="footer">
+
+
+	<div class="feedback">
+		<form>
+			<label>Name</label>
+			<input type="text" placeholder="Your name..">
+			<label>E-mail</label>
+			<input type="text" placeholder="Your E-mail..">
+			<label>Feedback</label>
+			<textarea rows="10" placeholder="Message"></textarea>
+			<input type="submit" >
+		</form>
+	</div>
+
+
+	<div class="fcontact">
+	
+		<div class="teamEmail" onmouseenter="reveal('#fcontactInner','100')" onmouseleave="hide('#fcontactInner')">
+		<h3>teamjatayumait@gmail.com</h3>
+			<div class="fcontactInner" id="fcontactInner">
+				<h1>TEAM  EMAIL</h1>
+			</div>
+		</div>
+
+		<div class="teamAddress" onmouseenter="reveal('#fcontactInner2','-100')" onmouseleave="hide('#fcontactInner2')">
+		<h3>
+		Auto Lab, M.A.I.T<br>
+		PSP Area, PLOT No.1, <br>
+		Sector 22, Rohini, <br> 
+		New Delhi- 110086</h3>
+			<div class="fcontactInner" id="fcontactInner2" style="background-color: rgba(99,99,99,1);">
+				<h1>TEAM  ADDRESS</h1>
+			</div>
+		</div>
+
+		<div class="contactInfo" onmouseenter="reveal('#fcontactInner3','100')" onmouseleave="hide('#fcontactInner3')">
+		<h3>
+		Raghvind Chopra : 
+		<pre>+91 88003 53043</pre><br>
+		Rahul Sindhu : 
+		<pre>+91 90680 56922</pre><br>
+		</h3>
+			<div class="fcontactInner" id="fcontactInner3" style="background-color: rgba(132,132,132,1);">
+				<h1>TEAM  CAPTAINS</h1>
+			</div>
+		</div>
+		
+		<div class="captainInfo" onmouseenter="reveal('#fcontactInner4','100')" onmouseleave="hide('#fcontactInner4')">
+		<h3>
+		Mr. Rakesh Saini : <pre>+91 99682 95354</pre>
+		</h3>
+			<div class="fcontactInner" id="fcontactInner4" style="background-color: rgba(33,33,33,1);">
+				<h1>FACULTY ADVISOR</h1>
+			</div>
+		</div>
+	</div>
+
+
+	<footer>
+	  <ul>
+	    <li><a href="https://www.instagram.com/teamjatayu/?hl=en"><i class="fa fa-instagram fa-2x" ></i></a></li>
+	    <li><a href="https://www.facebook.com/TeamJatayuMAIT/"><i class="fa fa-facebook-square fa-2x" ></i></a></li>
+	    <li><a href="https://www.youtube.com/channel/UCVoPwvpLRTAT4nn8pgI1u5A"><i class="fa fa-youtube-square fa-2x" ></i></a></li>
+	  </ul>
+	</footer>
+
 </section>
 
 
