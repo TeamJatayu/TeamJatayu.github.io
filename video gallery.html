@@ -15,14 +15,43 @@
     <link rel="stylesheet" href="assets/mobirise-gallery/style.css">
     <!--     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
  -->
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ 	<link rel="stylesheet" href="footer.css">
+	<link rel="stylesheet" type="text/css" href="props.css">
 
 
 </head>
 
 <body>
 
+	<nav class="initial">
+	<ul>
+		<li><a href="index.html"><div style="height:100%;width:100%;"></div></a></li>
+		<li><a href='#' class="deactivated">About Us</a></li>
+		<li><a href='gallery.html'>Gallery</a></li>
+		<li><a href='roster.html' >The Team</a></li>
+		<li><a href='competitions.html'>Competitions</a></li>
+		<li><a href='#' id="contact">Contact Us</a></li>
+		<li><a href='kalam/index.html' target="_blank"><b>TEAM KALAM</b></a></li>
+	</ul>
+</nav>
 
-    <section class="mbr-gallery mbr-slider-carousel cid-qvz0cgxPXY" id="gallery3-bl" data-rv-view="2509">
+
+
+<section class="moto" style="z-index: -1;">
+	<div>
+		<h1 align="center " class="fly-in-text hidden">VIDEO GALLERY</h1>
+	</div>
+	<div class="teamName">
+		<h2><pre>T e a m  J a t a y u</pre></h2>
+	</div>
+</section>
+
+
+    <section style="position: absolute;background-color: #333; top: 100vh;height: auto;" class="mbr-gallery mbr-slider-carousel cid-qvz0cgxPXY" id="gallery3-bl" data-rv-view="2509">
 
 
         <div>
@@ -170,6 +199,83 @@
 
     </section>
 
+    </section>
+
+<section class="empty" style="z-index: -4;position: absolute;top: 235vh;background-color: rgba(0,0,0,0);">
+	
+</section>
+
+
+<section class="footer" style="z-index: -3;"">
+
+
+	<div class="feedback">
+		<form>
+			<label>Name</label>
+			<input type="text" placeholder="Your name..">
+			<label>E-mail</label>
+			<input type="text" placeholder="Your E-mail..">
+			<label>Feedback</label>
+			<textarea rows="10" placeholder="Message"></textarea>
+			<input type="submit" >
+		</form>
+	</div>
+
+
+	<div class="fcontact">
+		
+		<div class="teamEmail" onmouseenter="reveal('#fcontactInner','100')" onmouseleave="hide('#fcontactInner')">
+		<h3>teamjatayumait@gmail.com</h3>
+			<div class="fcontactInner" id="fcontactInner">
+				<h1>TEAM  EMAIL</h1>
+			</div>
+		</div>
+
+		<div class="teamAddress" onmouseenter="reveal('#fcontactInner2','-100')" onmouseleave="hide('#fcontactInner2')">
+		<h3>
+		Auto Lab, M.A.I.T<br>
+		PSP Area, PLOT No.1, <br>
+		Sector 22, Rohini, <br> 
+		New Delhi- 110086</h3>
+			<div class="fcontactInner" id="fcontactInner2" style="background-color: rgba(99,99,99,1);">
+				<h1>TEAM  ADDRESS</h1>
+			</div>
+		</div>
+
+		<div class="contactInfo" onmouseenter="reveal('#fcontactInner3','100')" onmouseleave="hide('#fcontactInner3')">
+		<h3>
+		Raghvind Chopra : 
+		<pre>+91 88003 53043</pre><br>
+		Rahul Sindhu : 
+		<pre>+91 90680 56922</pre><br>
+		</h3>
+			<div class="fcontactInner" id="fcontactInner3" style="background-color: rgba(132,132,132,1);">
+				<h1>TEAM  CAPTAINS</h1>
+			</div>
+		</div>
+
+		<div class="captainInfo" onmouseenter="reveal('#fcontactInner4','100')" onmouseleave="hide('#fcontactInner4')">
+		<h3>
+		Mr. Rakesh Saini : <pre>+91 99682 95354</pre>
+		</h3>
+			<div class="fcontactInner" id="fcontactInner4" style="background-color: rgba(33,33,33,1);">
+				<h1>FACULTY ADVISOR</h1>
+			</div>
+		</div>
+		
+	</div>
+
+
+	<footer>
+	  <ul>
+	    <li><a href="https://www.instagram.com/teamjatayu/?hl=en"><i class="fa fa-instagram fa-2x" ></i></a></li>
+	    <li><a href="https://www.facebook.com/TeamJatayuMAIT/"><i class="fa fa-facebook-square fa-2x" ></i></a></li>
+	    <li><a href="https://www.youtube.com/channel/UCVoPwvpLRTAT4nn8pgI1u5A"><i class="fa fa-youtube-square fa-2x" ></i></a></li>
+	  </ul>
+	</footer>
+
+</section>
+
 
     <script src="assets/web/assets/jquery/jquery.min.js"></script>
     <script src="assets/popper/popper.min.js"></script>
@@ -188,6 +294,8 @@
     <script src="assets/mobirise-gallery/player.min.js"></script>
     <script src="assets/mobirise-gallery/script.js"></script>
 
+
+<script src="main.js"></script>
 
 </body>
 
