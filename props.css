@@ -868,7 +868,7 @@ nav ul li a{
 .bgBlurImg{
 	width:100vw; 
 	height:100vh; 
-	filter:blur(5px);
+	filter:blur(1px);
 }
 
 

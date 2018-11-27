@@ -21,15 +21,16 @@ $(window).ready(function(){
 	$(document).on(('scroll'),function(){
 			//to display team members
 // function fastScroll(eid){
-	if($('body').is('.chk')){
-	var hT = $("#design").offset().top,
-       hH = $("#design").outerHeight(),
-       wH = $(window).height(),
-       wS = $(this).scrollTop();
-   	if (wS > (hT+hH-wH)){
-       $('#design .init').removeClass('init');
-   	}
-   }
+
+ //   if($('body').is('.chk')){
+	// var hT = $("#design").offset().top,
+ //       hH = $("#design").outerHeight(),
+ //       wH = $(window).height(),
+ //       wS = $(this).scrollTop();
+ //   	if (wS > (hT+hH-wH)){
+ //       $('#design .init').removeClass('init');
+ //   	}
+ //   }
 // }
 
 			var currScroll = $(this).scrollTop();
@@ -122,3 +123,17 @@ function reveal(id,val){
 function hide(id){
 	$(id).css('transform','translateX(0)');
 }
+
+
+// Roster
+
+$(window).scroll(function(){   
+    $.each($(".roster") , function(elem , i){
+	    var hT = $(this).offset().top, hH = $(this).outerHeight(), wH = $(window).height(), wS = $(document).scrollTop();
+	   	if (wS > (hT+hH-wH)){
+	       $(this).children().removeClass('init');
+	   	}
+    });
+   
+});
+
