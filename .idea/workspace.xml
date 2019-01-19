@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfd63ef5-92a2-4a45-97a9-b98d9d0c97fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/roster/design/Ojasvi Chauhan_Design.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/roster/design/OjasviChauhanDesign.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/roster/design/Rohan Jindal_Design.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/roster/design/RohanJindalDesign.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/roster.html" beforeDir="false" afterPath="$PROJECT_DIR$/roster.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -30,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/roster.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="145" column="45" selection-start-line="145" selection-start-column="45" selection-end-line="145" selection-end-column="45" />
+            <state relative-caret-position="344">
+              <caret line="146" column="29" lean-forward="true" selection-start-line="146" selection-start-column="29" selection-end-line="146" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -43,6 +40,7 @@
                 <element signature="n#style#0;n#div#11;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -199,22 +197,22 @@
       <option name="presentableId" value="Default" />
       <updated>1547840189980</updated>
       <workItem from="1547840193672" duration="4816000" />
-      <workItem from="1547905075934" duration="292000" />
+      <workItem from="1547905075934" duration="999000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5108000" />
+    <option name="totallyTimeSpent" value="5815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22470239" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22470239" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -233,7 +231,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/images/roster/braking/Shivyanktyagibraking.jpg">
+    <entry file="file://$PROJECT_DIR$/images/roster/braking/Shivyankbraking.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/gallery.html">
@@ -273,8 +271,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/roster.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="145" column="45" selection-start-line="145" selection-start-column="45" selection-end-line="145" selection-end-column="45" />
+        <state relative-caret-position="344">
+          <caret line="146" column="29" lean-forward="true" selection-start-line="146" selection-start-column="29" selection-end-line="146" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#h1#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -286,6 +284,7 @@
             <element signature="n#style#0;n#div#11;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
